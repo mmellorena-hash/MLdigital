@@ -4,7 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mel Lorena | Estratégia Digital</title>
+  <title>Mel Lorena | Estratégia Digital — Captação de Clientes, Tráfego Pago e Sites</title>
+
+  <!-- =========================
+       SEO
+  ========================= -->
+
+  <meta name="description" content="Mel Lorena | ML Digital — estratégia digital para empresas que querem atrair mais clientes, gerar leads e vender mais. Captação de clientes, tráfego pago (Meta Ads e Google Ads) e criação de sites e landing pages.">
+  <meta name="keywords" content="estratégia digital, captação de clientes, tráfego pago, meta ads, google ads, criação de sites, landing page, geração de leads, marketing digital, agência digital">
+  <meta name="author" content="Mel Lorena | ML Digital">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mmellorena-hash.github.io/MLdigital/">
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mel Lorena | Estratégia Digital">
+  <meta property="og:description" content="Mais clientes, mais vendas. Captação de clientes, tráfego pago e criação de sites para empresas que querem crescer.">
+  <meta property="og:url" content="https://mmellorena-hash.github.io/MLdigital/">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mel Lorena | Estratégia Digital">
+  <meta name="twitter:description" content="Mais clientes, mais vendas. Captação de clientes, tráfego pago e criação de sites para empresas que querem crescer.">
 
   <style>
     :root {
@@ -441,6 +463,144 @@
       letter-spacing: 3px;
     }
 
+    footer .footer-links {
+      margin-top: 12px;
+      letter-spacing: normal;
+      font-size: 12px;
+    }
+
+    footer .footer-links a {
+      color: #aaa;
+      margin: 0 8px;
+      transition: .3s;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--beige);
+    }
+
+    /* =========================
+       COOKIE BANNER
+    ========================= */
+
+    #cookie-banner {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1000;
+      background: var(--black);
+      color: #eee;
+      padding: 20px 25px;
+      display: none;
+      box-shadow: 0 -4px 20px rgba(0,0,0,.25);
+    }
+
+    .cookie-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .cookie-text {
+      font-size: 13px;
+      color: #ccc;
+      max-width: 780px;
+    }
+
+    .cookie-text a {
+      color: var(--beige);
+      text-decoration: underline;
+    }
+
+    .cookie-actions {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .cookie-btn {
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,.3);
+      background: transparent;
+      color: #eee;
+      transition: .3s;
+    }
+
+    .cookie-btn.accept {
+      background: var(--beige);
+      border-color: var(--beige);
+      color: var(--black);
+      font-weight: bold;
+    }
+
+    .cookie-btn:hover {
+      opacity: .85;
+    }
+
+    /* =========================
+       MODAL — TERMOS / PRIVACIDADE
+    ========================= */
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1100;
+      background: rgba(17,17,17,.75);
+      padding: 30px 15px;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.active {
+      display: block;
+    }
+
+    .modal-box {
+      max-width: 700px;
+      margin: 40px auto;
+      background: var(--cream);
+      color: var(--black);
+      padding: 45px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 22px;
+      cursor: pointer;
+      color: var(--gray);
+      background: none;
+      border: none;
+    }
+
+    .modal-box h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .modal-box h3 {
+      font-size: 16px;
+      margin: 22px 0 8px;
+      color: var(--black);
+    }
+
+    .modal-box p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 10px;
+    }
+
     /* =========================
        RESPONSIVO
     ========================= */
@@ -491,485 +651,343 @@
       section {
         padding: 75px 0;
       }
+
+      .cookie-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .modal-box {
+        padding: 30px 22px;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <!-- =========================
        MENU
   ========================= -->
 
   <nav>
     <div class="container nav-container">
-
       <a href="#" class="logo">
         ML <span>|</span> MEL LORENA
       </a>
-
       <ul class="menu">
         <li>
           <a href="#servicos">Serviços</a>
         </li>
-
         <li>
           <a href="#processo">Processo</a>
         </li>
-
         <li>
           <a href="#contato">Contato</a>
         </li>
       </ul>
-
     </div>
   </nav>
-
-
   <!-- =========================
        HERO
   ========================= -->
 
   <header class="hero">
-
     <div class="container hero-content">
-
       <div>
-
         <div class="mini-title">
           Estratégia digital para o seu negócio
         </div>
-
         <h1>
           MAIS CLIENTES.<br>
           <span>MAIS VENDAS.</span>
         </h1>
-
         <p class="hero-description">
           Estratégias digitais para empresas que querem
           atrair novos clientes, gerar oportunidades
           e vender mais.
         </p>
-
         <div class="tags">
-
           <span class="tag">
             Captação de clientes
           </span>
-
           <span class="tag">
             Tráfego pago
           </span>
-
           <span class="tag">
             Criação de sites
           </span>
-
         </div>
-
       </div>
-
-
       <div class="hero-box">
-
         <div class="monogram">
           ML
         </div>
-
         <h2>
           Mel Lorena
         </h2>
-
         <p>
           Captação, tráfego pago e sites pensados
           para transformar presença digital
           em oportunidades comerciais.
         </p>
-
       </div>
-
     </div>
-
   </header>
-
-
   <!-- =========================
        SERVIÇOS
   ========================= -->
 
   <section class="services" id="servicos">
-
     <div class="container">
-
       <div class="section-number">
         01 — SERVIÇOS
       </div>
-
       <h2 class="section-title">
         O QUE EU FAÇO
       </h2>
-
-
       <div class="service-grid">
-
         <!-- CAPTAÇÃO -->
-
         <article class="service">
-
           <div class="service-number">
             01
           </div>
-
           <div class="service-icon">
             ◎
           </div>
-
           <h3>
             Captação de clientes
           </h3>
-
           <p>
             Estrutura para encontrar potenciais
             clientes e gerar novas oportunidades
             de venda.
           </p>
-
           <ul>
             <li>• Prospecção</li>
             <li>• Leads</li>
             <li>• WhatsApp</li>
             <li>• Funil de vendas</li>
           </ul>
-
         </article>
-
-
         <!-- TRÁFEGO -->
-
         <article class="service">
-
           <div class="service-number">
             02
           </div>
-
           <div class="service-icon">
             ↗
           </div>
-
           <h3>
             Tráfego pago
           </h3>
-
           <p>
             Campanhas para colocar sua empresa
             diante de pessoas com potencial
             de compra.
           </p>
-
           <ul>
             <li>• Meta Ads</li>
             <li>• Google Ads</li>
             <li>• Remarketing</li>
             <li>• Otimização</li>
           </ul>
-
         </article>
-
-
         <!-- SITES -->
-
         <article class="service">
-
           <div class="service-number">
             03
           </div>
-
           <div class="service-icon">
             ▢
           </div>
-
           <h3>
             Criação de sites
           </h3>
-
           <p>
             Sites e landing pages profissionais,
             objetivos e preparados para gerar
             contatos.
           </p>
-
           <ul>
             <li>• Site institucional</li>
             <li>• Landing page</li>
             <li>• Página de vendas</li>
             <li>• WhatsApp</li>
           </ul>
-
         </article>
-
       </div>
-
     </div>
-
   </section>
-
-
   <!-- =========================
        PROCESSO
   ========================= -->
 
   <section class="process" id="processo">
-
     <div class="container">
-
       <div class="section-number">
         02 — PROCESSO
       </div>
-
       <h2 class="section-title">
         ATRAIR → CONECTAR → VENDER
       </h2>
-
-
       <div class="steps">
-
         <div class="step">
-
           <div class="step-number">
             01
           </div>
-
           <h3>
             Atrair
           </h3>
-
           <p>
             Anúncios ou prospecção para colocar
             sua empresa diante das pessoas certas.
           </p>
-
         </div>
-
-
         <div class="step">
-
           <div class="step-number">
             02
           </div>
-
           <h3>
             Conectar
           </h3>
-
           <p>
             Site, landing page e WhatsApp criam
             um caminho simples até sua empresa.
           </p>
-
         </div>
-
-
         <div class="step">
-
           <div class="step-number">
             03
           </div>
-
           <h3>
             Converter
           </h3>
-
           <p>
             O interesse vira contato,
             lead e oportunidade comercial.
           </p>
-
         </div>
-
-
         <div class="step">
-
           <div class="step-number">
             04
           </div>
-
           <h3>
             Vender
           </h3>
-
           <p>
             O objetivo é transformar oportunidades
             em novos clientes.
           </p>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
   <!-- =========================
        PÚBLICO
   ========================= -->
 
   <section>
-
     <div class="container audience">
-
       <div>
-
         <div class="section-number">
           03 — PARA QUEM É
         </div>
-
         <h2 class="section-title">
           PARA EMPRESAS
           QUE QUEREM
           CRESCER.
         </h2>
-
       </div>
-
-
       <ul class="audience-list">
-
         <li>
           Atrair novos clientes
         </li>
-
         <li>
           Aumentar os contatos
         </li>
-
         <li>
           Melhorar a presença digital
         </li>
-
         <li>
           Divulgar produtos e serviços
         </li>
-
         <li>
           Transformar tráfego em oportunidades
         </li>
-
       </ul>
-
     </div>
-
   </section>
-
-
   <!-- =========================
        DIFERENCIAIS
   ========================= -->
 
   <section class="differentials">
-
     <div class="container">
-
       <div class="section-number">
         04 — DIFERENCIAL
       </div>
-
       <h2 class="section-title">
         DIRETO AO PONTO.
       </h2>
-
-
       <div class="benefits">
-
         <div class="benefit">
-
           <h3>
             Foco em resultado
           </h3>
-
           <p>
             Estratégia pensada para gerar
             oportunidades comerciais,
             não apenas visualizações.
           </p>
-
         </div>
-
-
         <div class="benefit">
-
           <h3>
             Estratégia integrada
           </h3>
-
           <p>
             Captação, anúncios e site
             trabalhando juntos.
           </p>
-
         </div>
-
-
         <div class="benefit">
-
           <h3>
             Gestão e otimização
           </h3>
-
           <p>
             Acompanhamento contínuo para
             identificar o que pode ser melhorado.
           </p>
-
         </div>
-
-
         <div class="benefit">
-
           <h3>
             Atendimento próximo
           </h3>
-
           <p>
             Comunicação direta para entender
             o negócio e suas necessidades.
           </p>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
   <!-- =========================
        CONTATO
   ========================= -->
 
   <section class="contact" id="contato">
-
     <div class="container">
-
       <div class="section-number">
         05 — CONTATO
       </div>
-
       <h2>
         PRONTA PARA
         ATRAIR MAIS
         CLIENTES?
       </h2>
-
       <p>
         Vamos falar sobre o seu negócio.
       </p>
-
-
       <!-- WHATSAPP -->
-
       <a
         class="whatsapp"
         href="https://wa.me/5521988342111"
@@ -978,32 +996,21 @@
       >
         Fale comigo pelo WhatsApp →
       </a>
-
-
       <!-- CONTATOS -->
-
       <div class="contact-info">
-
         <!-- INSTAGRAM -->
-
         <a
-          href="https://www.instagram.com/mellorena01/"
+          href="https://www.instagram.com/ml_estrategiadigital/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Instagram
         </a>
-
-
         <!-- E-MAIL -->
-
         <a href="mailto:mmellorena@gmail.com">
           E-mail
         </a>
-
-
         <!-- WHATSAPP -->
-
         <a
           href="https://wa.me/5521988342111"
           target="_blank"
@@ -1011,22 +1018,111 @@
         >
           WhatsApp
         </a>
-
       </div>
-
     </div>
-
   </section>
-
-
   <!-- =========================
        FOOTER
   ========================= -->
 
   <footer>
     ML · MEL LORENA · ESTRATÉGIA DIGITAL
+    <div class="footer-links">
+      <a href="#" onclick="openModal('modal-termos'); return false;">Termos de Uso</a>
+      ·
+      <a href="#" onclick="openModal('modal-privacidade'); return false;">Política de Privacidade e Cookies</a>
+    </div>
   </footer>
+  <!-- =========================
+       COOKIE BANNER
+  ========================= -->
 
+  <div id="cookie-banner">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        Usamos cookies para melhorar sua experiência no site, analisar o tráfego e personalizar conteúdo.
+        Ao continuar navegando, você concorda com nossa
+        <a href="#" onclick="openModal('modal-privacidade'); return false;">Política de Privacidade e Cookies</a>.
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn" onclick="rejectCookies()">Recusar</button>
+        <button class="cookie-btn accept" onclick="acceptCookies()">Aceitar</button>
+      </div>
+    </div>
+  </div>
+  <!-- =========================
+       MODAL — TERMOS DE USO
+  ========================= -->
 
+  <div class="modal-overlay" id="modal-termos">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal-termos')">×</button>
+      <h2>Termos de Uso</h2>
+      <p>Última atualização: setembro de 2026.</p>
+      <h3>1. Sobre este site</h3>
+      <p>Este site é operado por Mel Lorena (ML Digital) e tem como objetivo apresentar os serviços de estratégia digital, captação de clientes, tráfego pago e criação de sites oferecidos.</p>
+      <h3>2. Uso do conteúdo</h3>
+      <p>Todo o conteúdo publicado neste site (textos, imagens e identidade visual) pertence a ML Digital e não pode ser reproduzido sem autorização prévia.</p>
+      <h3>3. Contato e orçamentos</h3>
+      <p>As informações solicitadas por meio dos canais de contato (WhatsApp, e-mail e formulários) são utilizadas exclusivamente para responder a dúvidas e elaborar propostas comerciais.</p>
+      <h3>4. Responsabilidades</h3>
+      <p>ML Digital não se responsabiliza por decisões de negócio tomadas com base apenas nas informações gerais deste site. Cada projeto é avaliado individualmente antes do início de qualquer serviço.</p>
+      <h3>5. Alterações</h3>
+      <p>Estes termos podem ser atualizados periodicamente para refletir mudanças nos serviços oferecidos.</p>
+    </div>
+  </div>
+  <!-- =========================
+       MODAL — PRIVACIDADE E COOKIES
+  ========================= -->
+
+  <div class="modal-overlay" id="modal-privacidade">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal-privacidade')">×</button>
+      <h2>Política de Privacidade e Cookies</h2>
+      <p>Última atualização: setembro de 2026.</p>
+      <h3>1. Quais dados coletamos</h3>
+      <p>Podemos coletar dados fornecidos voluntariamente por você, como nome, telefone, e-mail e mensagens enviadas via WhatsApp ou formulários de contato.</p>
+      <h3>2. Uso dos dados</h3>
+      <p>Os dados coletados são usados apenas para responder solicitações, elaborar propostas e, quando autorizado, enviar comunicações sobre os serviços da ML Digital.</p>
+      <h3>3. Cookies</h3>
+      <p>Este site pode usar cookies para lembrar suas preferências, entender como você navega e melhorar sua experiência. Você pode aceitar ou recusar cookies não essenciais a qualquer momento pelo banner exibido no site.</p>
+      <h3>4. Compartilhamento de dados</h3>
+      <p>Não vendemos nem compartilhamos seus dados com terceiros, exceto quando necessário para prestação dos serviços contratados (por exemplo, ferramentas de anúncios como Meta Ads e Google Ads) ou por exigência legal.</p>
+      <h3>5. Seus direitos</h3>
+      <p>Você pode solicitar a qualquer momento a atualização ou exclusão dos seus dados entrando em contato pelo e-mail mmellorena@gmail.com.</p>
+    </div>
+  </div>
+  <script>
+    // ===== Cookie consent =====
+    function acceptCookies() {
+      try { localStorage.setItem('ml_cookie_consent', 'accepted'); } catch (e) {}
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function rejectCookies() {
+      try { localStorage.setItem('ml_cookie_consent', 'rejected'); } catch (e) {}
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      var consent = null;
+      try { consent = localStorage.getItem('ml_cookie_consent'); } catch (e) {}
+      if (!consent) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    });
+    // ===== Modais (Termos / Privacidade) =====
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+    document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) {
+          overlay.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
